@@ -37,4 +37,7 @@ public class SubHunter extends Activity {
         Log.d("Debugging", "In takeShot");
         draw();
     }
+    void draw() {
+        Log.d("Debugging", "In draw");
+    }
 }
