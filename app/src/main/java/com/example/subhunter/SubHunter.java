@@ -24,7 +24,7 @@ public class SubHunter extends Activity {
         setContentView(R.layout.activity_main);
     }
     @Override
-    public boolean onTouchEvent (MotionEvent motionEvent) {
+    public boolean onTouchEvent(MotionEvent motionEvent) {
         Log.d("Debugging", "In onTouchEvent");
         takeShot();
 
@@ -32,5 +32,9 @@ public class SubHunter extends Activity {
     }
     public void newGame() {
         Log.d("Debugging", "In newGame");
+    }
+    void takeShot() {
+        Log.d("Debugging", "In takeShot");
+        draw();
     }
 }
