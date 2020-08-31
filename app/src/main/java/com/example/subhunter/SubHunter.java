@@ -15,7 +15,7 @@ import java.util.Random;
 
 public class SubHunter extends Activity {
     int numberHorizontalPixels;
-    int getNumberVerticalPixels;
+    int numberVerticalPixels;
     int blockSize;
     int gridWidth = 40;
     int gridHeight;
@@ -36,6 +36,13 @@ public class SubHunter extends Activity {
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         display.getSize(size);
+
+//        Initialize our size based variables
+//        based on the screen resolution
+        numberHorizontalPixels = size.x;
+        numberVerticalPixels = size.y;
+        blockSize = numberHorizontalPixels / gridWidth;
+        gridHeight = numberVerticalPixels / blockSize;
 
         Log.d("Debugging", "In onCreate");
         newGame();
