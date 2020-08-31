@@ -31,6 +31,12 @@ public class SubHunter extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Get the current device's screen resolution.
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+
         Log.d("Debugging", "In onCreate");
         newGame();
         draw();
