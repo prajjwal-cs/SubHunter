@@ -82,6 +82,11 @@ public class SubHunter extends Activity {
                 "" + distanceFromSub);
     }
     public void newGame() {
+        Random random = new Random();
+        subHorizontalPosition = random.nextInt(gridWidth);
+        subVerticalPosition = random.nextInt(gridHeight);
+        shotsTaken = 0;
+
         Log.d("Debugging", "In newGame");
     }
     void takeShot() {
