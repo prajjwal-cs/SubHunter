@@ -56,6 +56,31 @@ public class SubHunter extends Activity {
 
         return true;
     }
+    // This code prints the debugging text
+    public void printDebuggingText() {
+        Log.d("numberHorizontalPixels",
+                "" + numberHorizontalPixels);
+        Log.d("numberVerticalPixels",
+                "" + numberVerticalPixels);
+
+        Log.d("blockSize", " " + blockSize);
+        Log.d("gridWidth", " " + gridWidth);
+        Log.d("gridHeight", " " + gridHeight);
+        Log.d("horizontalTouched",
+                " " + horizontalTouched);
+        Log.d("verticalTouched",
+                " " + verticalTouched);
+        Log.d("subHorizontalPosition",
+                " " + subHorizontalPosition);
+        Log.d("subVerticalPosition",
+                " " + subVerticalPosition);
+        Log.d("hit", " " + hit);
+        Log.d("shotsTaken", " " + shotsTaken);
+        Log.d("debugging", " " + debugging);
+
+        Log.d("distanceFromSub",
+                " " + distanceFromSub);
+    }
     public void newGame() {
         Log.d("Debugging", "In newGame");
     }
@@ -65,5 +90,6 @@ public class SubHunter extends Activity {
     }
     void draw() {
         Log.d("Debugging", "In draw");
+        printDebuggingText();
     }
 }
