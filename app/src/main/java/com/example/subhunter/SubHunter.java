@@ -63,23 +63,23 @@ public class SubHunter extends Activity {
         Log.d("numberVerticalPixels",
                 "" + numberVerticalPixels);
 
-        Log.d("blockSize", " " + blockSize);
-        Log.d("gridWidth", " " + gridWidth);
-        Log.d("gridHeight", " " + gridHeight);
+        Log.d("blockSize", "" + blockSize);
+        Log.d("gridWidth", "" + gridWidth);
+        Log.d("gridHeight", "" + gridHeight);
         Log.d("horizontalTouched",
-                " " + horizontalTouched);
+                "" + horizontalTouched);
         Log.d("verticalTouched",
-                " " + verticalTouched);
+                "" + verticalTouched);
         Log.d("subHorizontalPosition",
-                " " + subHorizontalPosition);
+                "" + subHorizontalPosition);
         Log.d("subVerticalPosition",
-                " " + subVerticalPosition);
-        Log.d("hit", " " + hit);
-        Log.d("shotsTaken", " " + shotsTaken);
-        Log.d("debugging", " " + debugging);
+                "" + subVerticalPosition);
+        Log.d("hit", "" + hit);
+        Log.d("shotsTaken", "" + shotsTaken);
+        Log.d("debugging", "" + debugging);
 
         Log.d("distanceFromSub",
-                " " + distanceFromSub);
+                "" + distanceFromSub);
     }
     public void newGame() {
         Log.d("Debugging", "In newGame");
