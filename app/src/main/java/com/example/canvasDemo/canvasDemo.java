@@ -1,4 +1,36 @@
 package com.example.canvasDemo;
 
-public class canvasDemo {
+import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.os.Bundle;
+import android.widget.ImageView;
+
+public class canvasDemo extends Activity {
+
+    ImageView myImageView;
+    Bitmap myBlankBitmap;
+    Canvas myCanvas;
+    Paint myPaint;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // Initialize all the objects ready for drawing.
+        int widthInPixels = 800;
+        int heightInPixels = 800;
+
+        // Create a new Bitmap
+        myBlankBitmap = Bitmap.createBitmap(widthInPixels,
+                heightInPixels, Bitmap.Config.ARGB_8888);
+
+        // Initialize the ImageView and associate it
+        // with the Bitmap to draw on
+        myCanvas = new Canvas(myBlankBitmap);
+
+        // Initialize the imageView and the paint
+        myImageView = new ImageView(this);
+        myPaint = new Paint();
+    }
 }
