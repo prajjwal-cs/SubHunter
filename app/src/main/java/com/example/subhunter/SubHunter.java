@@ -49,6 +49,16 @@ public class SubHunter extends Activity {
         numberVerticalPixels = size.y;
         blockSize = numberHorizontalPixels / gridWidth;
         gridHeight = numberVerticalPixels / blockSize;
+//      initialize all the objects ready for drawing.
+        int widthInPixels = 800;
+        int heightInPixels = 800;
+
+        myBlankBitmap = Bitmap.createBitmap(widthInPixels,
+                heightInPixels, Bitmap.Config.ARGB_8888);
+
+        myCanvas = new Canvas(myBlankBitmap);
+        myImageView = new ImageView(this);
+        myPaint = new Paint();
 
         Log.d("Debugging", "In onCreate");
         newGame();
