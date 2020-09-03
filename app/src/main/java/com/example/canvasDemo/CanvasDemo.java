@@ -7,7 +7,7 @@ import android.graphics.Paint;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-public class canvasDemo extends Activity {
+public class CanvasDemo extends Activity {
 
     ImageView myImageView;
     Bitmap myBlankBitmap;
