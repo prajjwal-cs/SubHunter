@@ -28,6 +28,12 @@ public class SubHunter extends Activity {
     int distanceFromSub;
     boolean debugging = true;
 
+    ImageView myImageView;
+    Bitmap myBlankBitmap;
+    Canvas myCanvas;
+    Paint myPaint;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
