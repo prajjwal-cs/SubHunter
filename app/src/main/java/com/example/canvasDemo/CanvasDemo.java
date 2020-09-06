@@ -41,5 +41,7 @@ public class CanvasDemo extends Activity {
         myPaint.setTextSize(100);
         // Change the paint to white
         myPaint.setColor(Color.argb(255, 255, 255, 255));
+        //draw some text
+        myCanvas.drawText("Hello World!", 100, 100, myPaint);
     }
 }
