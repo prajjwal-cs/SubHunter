@@ -46,5 +46,7 @@ public class CanvasDemo extends Activity {
 
         // Change the paint to Yellow
         myPaint.setColor(Color.argb(255, 212, 207, 62));
+        // Draw a circle
+        myCanvas.drawCircle(400, 250, 100, myPaint);
     }
 }
