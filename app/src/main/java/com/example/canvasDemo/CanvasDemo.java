@@ -43,5 +43,8 @@ public class CanvasDemo extends Activity {
         myPaint.setColor(Color.argb(255, 255, 255, 255));
         //draw some text
         myCanvas.drawText("Hello World!", 100, 100, myPaint);
+
+        // Change the paint to Yellow
+        myPaint.setColor(Color.argb(255, 212, 207, 62));
     }
 }
