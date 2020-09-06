@@ -36,5 +36,8 @@ public class CanvasDemo extends Activity {
         // Draw on the Bitmap
         // Wipe the Bitmap with a blue color
         myCanvas.drawColor(Color.argb(25, 0, 0, 255));
+
+        // Resize the text
+        myPaint.setTextSize(100);
     }
 }
