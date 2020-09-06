@@ -39,5 +39,7 @@ public class CanvasDemo extends Activity {
 
         // Resize the text
         myPaint.setTextSize(100);
+        // Change the paint to white
+        myPaint.setColor(Color.argb(255, 255, 255, 255));
     }
 }
